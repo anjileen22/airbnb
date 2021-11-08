@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<title>Attractions | 1234 Sandy Beach Road, Queenscliffe, New Zealand</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet"> 
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Linking Stylesheet -->
+		<link rel="stylesheet" href="../styles/styles.css">
+	</head>
+
+	<body>
+		<header class="header"> <!-- Header -->
+			<h1 id="banner">1234 Sandy Beach Road</h1>
+		</header> <!-- End header -->
+
+		<nav class="nav"> <!-- Navigation -->
+		<div id="navlinks">
+			<a href="../index.html">Home</a>
+			<a href="../about/about.html">About</a>
+			<a href="../gallery/gallery.html">Gallery</a>
+			<a href="../attractions/attractions.html">Attractions</a>
+			<a href="../contact/contact.html">Contact</a>
+			</div> <!-- End navlinks -->
+		
+		<div id="mobilenav"> <!-- Mobile navigation -->
+			<a href=""><br></a>
+			<a href="../index.html">Home</a>
+			<a href="../about/about.html">About</a>
+			<a href="../gallery/gallery.html">Gallery</a>
+			<a href="../attractions/attractions.html">Attractions</a>
+			<a href="../contact/contact.html">Contact</a>
+			</div> <!-- End mobile navigation -->
+			
+		<a href="javascript:void(0);" class="icon" onclick="navToggle()">
+		Menu <i class="fa fa-bars"></i></a>
+		</nav> <!-- End navigation -->
+		
+		<main> <!-- Main content -->
+			<div class="row"> <!-- Row --> 
+			<div class="leftcolumn"> <!-- Left column --> 
+			<h2 class="bold">
+			Attractions
+			</h2>
+			<br /><br />
+			<h3>
+			Check out some of these attractions that surround our Airbnb!
+			</h3>
+			<br />
+			<br />
+			<h3 class="bold"><a href="https://www.newzealand.com/nz/feature/long-bay-regional-park/" target="_blank">Queenscliffe Park</h3></a>
+			<br />
+			<h3>
+			This beautiful waterfront park is just a ten minute walk away from our Airbnb. Featuring spectacular views and plenty of grassy areas with ample shade, this is the perfect place for a relaxing picnic and a spot of swimming! If you're up for some physical activity, there is also a beautiful walking trail that will lead you through native forest.
+			</h3>
+			<br />
+			<br />
+			<h3 class="bold"><a href="https://www.zomato.com/auckland/rupas-freemans-bay" target="_blank">Rupa's Cafe</h3></a>
+			<br />
+			<h3>
+			Pop in to Rupa's cafe for a bite of some scrumptious food. Whether you are craving bacon and eggs on toast for breakfast, tasty pies for lunch, or a sweet afternoon treat, Rupa's has a great selection of food.
+			</h3>
+			<br /> 
+			<br />
+			</div> <!-- End left column -->
+			<br/>
+			<br/>
+			<div class="rightcolumn"> <!-- Right column -->   
+			<img src="../images/queenscliffepark.jpg" width="400px" alt="queenscliffe park">
+			<img src="../images/rupas.jpg" width="400px" alt="rupa's cafe">
+			</div> <!-- End right column -->
+			</div> <!-- End row -->
+		</main> <!-- End main content -->
+		
+		<footer class="footer"> <!-- Footer -->
+		<p>1234 Sandy Beach Road, Queenscliffe, New Zealand | Contact Sally Sharp - (00)1234 1122</p>
+		</footer> <!-- End footer -->
+		
+		<!-- Script for mobile menu toggle -->
+		<script>
+		function navToggle() {
+		  var x = document.getElementById("mobilenav");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
+		
+	</body>
+</html>	

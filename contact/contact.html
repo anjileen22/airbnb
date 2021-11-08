@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<title>Contact | 1234 Sandy Beach Road, Queenscliffe, New Zealand</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet"> 
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Linking Stylesheet -->
+		<link rel="stylesheet" href="../styles/styles.css">
+	</head>
+
+	<body>
+		<header class="header"> <!-- Header -->
+			<h1 id="banner">1234 Sandy Beach Road</h1>
+		</header> <!-- End header -->
+
+		<nav class="nav"> <!-- Navigation -->
+		<div id="navlinks">
+			<a href="../index.html">Home</a>
+			<a href="../about/about.html">About</a>
+			<a href="../gallery/gallery.html">Gallery</a>
+			<a href="../attractions/attractions.html">Attractions</a>
+			<a href="../contact/contact.html">Contact</a>
+			</div> <!-- End navlinks -->
+		
+		<div id="mobilenav"> <!-- Mobile navigation -->
+			<a href=""><br></a>
+			<a href="../index.html">Home</a>
+			<a href="../about/about.html">About</a>
+			<a href="../gallery/gallery.html">Gallery</a>
+			<a href="../attractions/attractions.html">Attractions</a>
+			<a href="../contact/contact.html">Contact</a>
+			</div> <!-- End mobile navigation -->
+			
+		<a href="javascript:void(0);" class="icon" onclick="navToggle()">
+		Menu <i class="fa fa-bars"></i></a>
+		</nav> <!-- End navigation -->
+		
+		<main> <!-- Main content -->
+		<div class="row"> <!-- Row -->
+		<div class="leftcolumn"> <!-- Left column -->
+			<h2 class="bold">
+			Contact
+			</h2>
+			<br /><br />
+			<h3>
+			Ready to book your luxury escape? Have questions?
+			<br><br>
+			For bookings or more information please contact Sally Sharp. 
+			<br />
+			<br />
+			Phone: (00)1234 1122
+			</h3>
+			<br /><br />
+			
+			<form method="POST" action="../mail.php">
+
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Your name">
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Your email">
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Enter your message" style="height:200px"></textarea>
+
+			<input type="submit" name="submit" value="Submit">
+
+			</form>
+			
+	
+			</div> <!-- End left column -->
+			<br/>
+			<br/>
+			<div class="rightcolumn"> <!-- Right column -->
+			<img src="../images/housefront.png" width="100%" alt="front of house 1234 sandy beach road queenscliffe new zealand">
+			</div> <!-- End right columns -->
+			</div> <!-- End row -->
+		</main> <!-- End main content -->
+		
+		<footer class="footer"> <!-- Footer -->
+		<p>1234 Sandy Beach Road, Queenscliffe, New Zealand | Contact Sally Sharp - (00)1234 1122</p>
+		</footer> <!-- End footer -->
+		
+		<!-- Script for mobile menu toggle -->
+		<script>
+		function navToggle() {
+		  var x = document.getElementById("mobilenav");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
+		<!--
+		 <script type="text/javascript">
+function sendEnquiryform(){
+    var name=$('#name').val();
+    var email=$('#email').val();
+    var message=$('#message').val();
+    $.post("send_mail.php",'name='+name+'&email='+email'&message='+message,function(result,status,xhr) {
+            if( status.toLowerCase()=="error".toLowerCase() )
+            { alert("An Error Occurred.."); }
+            else { 
+                //alert(result);
+                $('#sucessMessage').html(result);
+            }
+        })
+        .fail(function(){ alert("something went wrong. Please try again") });
+}
+</script>
+-->
+		
+	</body>
+</html>	

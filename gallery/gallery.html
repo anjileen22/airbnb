@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<title>Gallery | 1234 Sandy Beach Road, Queenscliffe, New Zealand</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet"> 
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Linking Stylesheet -->
+		<link rel="stylesheet" href="../styles/styles.css">
+	</head>
+
+	<body>
+		<header class="header"> <!-- Header -->
+			<h1 id="banner">1234 Sandy Beach Road</h1>
+		</header> <!-- End header -->
+
+		<nav class="nav"> <!-- Navigation -->
+		<div id="navlinks">
+			<a href="../index.html">Home</a>
+			<a href="../about/about.html">About</a>
+			<a href="../gallery/gallery.html">Gallery</a>
+			<a href="../contact/contact.html">Contact</a>
+			</div> <!-- End navlinks -->
+		
+		<div id="mobilenav"> <!-- Mobile navigation -->
+			<a href=""><br></a>
+			<a href="../index.html">Home</a>
+			<a href="../about/about.html">About</a>
+			<a href="../gallery/gallery.html">Gallery</a>
+			<a href="../contact/contact.html">Contact</a>
+			</div> <!-- End mobile navigation -->
+			
+		<a href="javascript:void(0);" class="icon" onclick="navToggle()">
+		Menu <i class="fa fa-bars"></i></a>
+		</nav> <!-- End navigation -->
+		
+		<main> <!-- Main content -->
+		
+		<h2 class="bold flex100">Gallery</h2>
+		<div class="galleryrow">
+		<div class="gallerycolumn">
+    		<img src="../images/houseback.png" alt="house exterior with deck overlooking the beach" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/housebathroom.png" alt="house interior showing bathroom" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/housebedroom.png" alt="house interior showing bedroom" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/housefront.png" alt="house front" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/housekitchen.png" alt="house interior showing dining room" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/houselounge.png" alt="house interior showing lounge" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/houselounge2.png" alt="house interior showing pool table" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/housepool.png" alt="house exterior showing swimming pool" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		<div class="gallerycolumn">
+    		<img src="../images/housesauna.png" alt="house interior showing sauns" onclick="openModal();currentSlide(1)" class="cursor">
+		</div>
+
+		</div> <!-- End row -->
+		
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+		  
+		  <div class="mySlides">
+		  <img src="../images/houseback.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/housebathroom.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/housebedroom.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/housefront.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/housekitchen.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/houselounge.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/houselounge2.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/housepool.png" alt="house back">
+		  </div>
+		  <div class="mySlides">
+		  <img src="../images/housesauna.png" alt="house back">
+		  </div>
+  
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+		</div> <!-- End modal content -->
+		</div> <!-- End modal -->
+		
+		</main> <!-- End main content -->
+		
+		<footer class="footer"> <!-- Footer -->
+		<p>1234 Sandy Beach Road, Queenscliffe, New Zealand | Contact Sally Sharp - (00)1234 1122</p>
+		</footer> <!-- End footer -->
+		
+		<!-- Script for gallery -->
+		<script>
+			function openModal() {
+			  document.getElementById("myModal").style.display = "block";
+			}
+
+			function closeModal() {
+			  document.getElementById("myModal").style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+				slides[slideIndex-1].style.display = "block";
+
+
+			  
+			}
+		</script>
+		
+		<!-- Script for mobile menu toggle -->
+		<script>
+		function navToggle() {
+		  var x = document.getElementById("mobilenav");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
+		
+
+		
+	</body>
+</html>	

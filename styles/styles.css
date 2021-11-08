@@ -1,0 +1,409 @@
+/* CSS Rest */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Links */
+a, a:visited {
+	color: #26345a;
+	text-decoration: none;
+}
+
+/* Links hover */
+a:hover {
+	color: #b9864f;
+}
+
+/* Paragraph font */
+p {
+	font-size: 17px;
+	line-height: 1.7;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Heading 1 */
+h1 {
+	font-size: 34px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Heading 1 banner font */
+h1#banner {
+	text-shadow: 2px 1px 6px #000000;
+	padding-top: 1.2em;
+	color: #ffffff;
+	
+}
+
+/* Heading 2 */
+h2 {
+	font-family: Bitter, serif;
+}
+
+/* Heading 3 */
+h3 {
+	font-size: 17px;
+	line-height: 1.5;
+	font-family: Bitter, serif;
+	color: #363636;
+	font-weight: 400;
+}
+
+/* Bold font */
+.bold {
+	font-weight: 700;
+}
+	
+/* Navigation */	
+nav.nav {
+	overflow: hidden;
+	background-color: #26345a;
+	font-family: 'Open Sans', sans;
+	min-height: 55px;
+}
+
+/* Navigation link */
+nav.nav a {
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1em 2em 1em 2em;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+/* Navigation link hover */
+nav.nav a:hover {
+	background-color: #1f2945;
+}
+
+/* Mobile nav */
+#mobilenav {
+	display: none;
+}
+
+#mobilenav a {
+	display: block; 
+	width: 100%;
+	padding: 1em 4em 0.5em 4em;
+	text-align: left;
+	background: #1f2945;
+}
+
+#navlinks {
+	padding: 0em 2em 0em 2em;
+}
+
+/* Hide the mobile nav toggle icon */
+nav.nav a.icon {
+	display: none;
+}
+
+/* Style the hamburger menu */
+.nav a.icon {
+	background: #26345a;
+	display: block;
+	position: absolute;
+	left: 0;
+	color: #fff;
+	width: 100%;
+}
+
+
+/* Header */
+header.header {
+	background: #26345a;
+	color: #000;
+	text-align: center;
+	height: 250px;
+	background-image: url('../images/heroimage.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+
+/* Banner */
+.banner {
+	width: 100%;
+	height: auto;
+	margin: 10px 0 30px;
+}
+
+/* Banner image */
+.banner img {
+	width: 100%;
+}
+
+/* Main content */
+main {
+	padding: 1em 4em 1em 4em;
+	min-height: 55vh;
+}
+
+main a {
+	text-decoration: underline;
+}
+
+/* Column container */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Left column */
+.leftcolumn {
+	flex: 60%; 
+	background-color: #fff; 
+	padding: 10px 10px 10px 0; 
+}
+
+/* Right column */
+.rightcolumn {
+	flex: 40%; 
+	background-color: #fff; 
+	padding: 10px 0px 10px 0; 
+}
+
+/* Footer */
+footer.footer {
+	background: #ccc;
+	padding: 1em 4em 1em 4em;
+	margin-top: 20px;
+}
+
+/* Footer paragraph font */
+footer p {
+	font-size: 15px;
+}
+
+/* Flex 100% */
+.flex100 {
+	flex-basis: 100%;
+}
+
+/* Javascript Gallery */
+.galleryrow > .gallerycolumn {
+	padding: 1% 2% 1% 0;
+}
+
+.galleryrow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gallerycolumn {
+	float: left;
+	width: 33.3%;
+}
+
+.gallerycolumn img {
+	width: 100%;
+	object-fit: cover;
+	height: 50vh;
+	background: #ccc;
+}
+
+.mySlides img {
+	width: 100%;
+}
+
+/* Gallery Modal Background */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 60px;
+	padding-bottom: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #26345a;
+}
+
+/* Gallery Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #26345a;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 800px;
+}
+
+/* Gallery close button */
+.close {
+	color: #ffffff;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #999999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mySlides {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+/* Gallery next and previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	background: #26345a;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+a.prev,
+a.next {
+	text-decoration: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Form Styling */
+
+/* form */
+form {
+	width: 90%;
+}
+
+/* label */
+label {
+	font-family: 'Bitter', serif;
+	font-size: 17px;
+}
+
+/* textbox */
+input[type=text] {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin: 5px 0 10px 0;
+	font-family: 'Bitter', serif;
+	font-size: 17px;
+}
+
+/* textarea */
+textarea {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	height: 100px;
+	margin-bottom: 10px;
+	font-family: 'Bitter', serif;
+	font-size: 17px;
+}
+
+/* submit button */
+input[type=submit] {
+	background: #26345a;
+	color: #ffffff;
+	padding: 10px 15px;
+	margin-top: 5px;
+	font-family: 'Bitter', serif;
+	font-size: 15px;
+	border: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+.gallerycolumn {
+	width: 100%;
+	}	
+}
+
+@media screen and (max-width: 750px) {
+	
+nav.nav #navlinks {
+	display: none;
+}
+	
+nav.nav a.icon {
+	display: block;
+}
+	
+#mobilenav a {
+	padding: 0.5em 1em 0.5em 1em;
+}
+	
+main {
+	padding: 0.5em 1em 0.5em 1em;
+}
+	
+footer.footer {
+	padding: 0.5em 1em 0.5em 1em;
+}
+	
+h1#banner {
+	font-size: 28px;
+	}
+}
+
+@media screen and (min-width: 751px) {
+#mobilenav {
+	display: none !important;
+	}
+}
+
+@media screen and (max-width: 700px) {
+.row {   
+	flex-direction: column;
+	}
+
+nav.nav a {
+	padding: 0.5em 2em 0.5em 2em;
+	}
+
+nav.nav {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+.rightcolumn {
+	text-align: right;
+	}
+}
+
+@media screen and (min-width: 651px) and (max-width: 1200px) {
+.gallerycolumn {
+	width: 50%;
+	}
+}
+
+
+
