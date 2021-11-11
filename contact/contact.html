@@ -66,22 +66,6 @@
 			</h3>
 			<br /><br />
 			
-			<form method="POST" action="../mail.php">
-
-			<label for="name">Name</label>
-			<input type="text" id="name" name="name" placeholder="Your name">
-
-			<label for="email">Email</label>
-			<input type="text" id="email" name="email" placeholder="Your email">
-
-			<label for="message">Message</label>
-			<textarea id="message" name="message" placeholder="Enter your message" style="height:200px"></textarea>
-
-			<input type="submit" name="submit" value="Submit">
-
-			</form>
-			
-	
 			</div> <!-- End left column -->
 			<br/>
 			<br/>
@@ -106,24 +90,6 @@
 		  }
 		}
 		</script>
-		<!--
-		 <script type="text/javascript">
-function sendEnquiryform(){
-    var name=$('#name').val();
-    var email=$('#email').val();
-    var message=$('#message').val();
-    $.post("send_mail.php",'name='+name+'&email='+email'&message='+message,function(result,status,xhr) {
-            if( status.toLowerCase()=="error".toLowerCase() )
-            { alert("An Error Occurred.."); }
-            else { 
-                //alert(result);
-                $('#sucessMessage').html(result);
-            }
-        })
-        .fail(function(){ alert("something went wrong. Please try again") });
-}
-</script>
--->
 		
 	</body>
 </html>	
